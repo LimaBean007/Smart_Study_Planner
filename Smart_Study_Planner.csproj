@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>POE_Task_1</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>study_app.ico</ApplicationIcon>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Print.png" />
+    <None Remove="Save.png" />
+    <None Remove="Splash Screen 2.png" />
+    <None Remove="user_circle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Print.png" />
+    <Resource Include="Save.png" />
+    <Resource Include="user_circle.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <SplashScreen Include="Splash Screen 2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Study_Library">
+      <HintPath>..\Study Library PROG POE\Study_Library\bin\Debug\net5.0\Study_Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
